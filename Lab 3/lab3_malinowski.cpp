@@ -97,6 +97,41 @@ int main(){
     cout<<"logical comparison 4 = "<<logicalcom4<<endl;
 
     // EXERCISE
-    
+    cout<<"\nEXERCISE"<<endl;
+
+    // DECLARE
+    int a;
+    int b;
+
+    // ASSIGN
+    cout<<"Enter the first number (a): ";
+    cin>>a;
+    cout<<"Enter the second number (b): ";
+    cin>>b;
+
+    // Arithmetic Operations
+    cout<<"\nArithmetic Operations"<<endl;
+
+    cout<<"a + b = "<<a+b<<endl;
+    cout<<"a - b = "<<a-b<<endl;
+    cout<<"a * b = "<<a*b<<endl;
+    cout<<"a / b = "<<a/b<<endl;
+    cout<<"a % b = "<<a%b<<endl;
+
+    // Assignment Operations
+    a += 10;
+    b -= 5;
+    cout<<"\nAfter Assignment Operations"<<endl;
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl;
+
+    // Boolean Operations
+    cout<<"\nBoolean Operations"<<endl;
+    cout<<"Is a greater than b? "<<(a>b)<<endl;
+    cout<<"Is a equal to b? "<<(a==b)<<endl;
+    cout<<"Is a not equal to b? "<<(a!=b)<<endl;
+    cout<<"Are both a and b positive? "<<(a>0 && b>0)<<endl;
+    cout<<"Is ether a or b negative? "<<(a<0 || b<0)<<endl;
+    cout<<"Is a not greater than b? "<<(!(a>b))<<endl;
     return 0;
 }
