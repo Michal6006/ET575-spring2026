@@ -113,7 +113,7 @@ int main(){
         cout<<"Result: "<<num1<<" "<<operation<<" "<<num2<<" = "<<(num1 * num2)<<endl;
         break;
     case '/':
-        cout<<"Result: "<<num1<<" "<<operation<<" "<<num2<<" = "<<(num1 / num2)<<endl;
+        cout<<"Result: "<<num1<<" "<<operation<<" "<<num2<<" = "<<(static_cast<float>(num1) / num2)<<endl;
         break;
     case '%':
         cout<<"Result: "<<num1<<" "<<operation<<" "<<num2<<" Remainder = "<<(num1 % num2)<<endl;
