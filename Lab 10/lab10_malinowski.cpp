@@ -1,7 +1,7 @@
 /*
 Michal Malinowski
 Mar 2, 2026
-Lab 9 Loop Mechanics
+Lab 10 Loop Mechanics
 */
 #include<iostream>
 
