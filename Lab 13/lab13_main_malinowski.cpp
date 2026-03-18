@@ -37,5 +37,12 @@ int main(){
     printarea(length, width, area_rec);
 
     cout<<"\n----- Exercise -----"<<endl;
+    
+    int number;
+    cout<<"Enter a number: ";
+    cin>>number;
+
+    bool check = isEven(number);
+    printResult(number, check); 
     return 0;
 }

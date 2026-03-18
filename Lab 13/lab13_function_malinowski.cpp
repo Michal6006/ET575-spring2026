@@ -62,3 +62,20 @@ string checknumber(int number){
     void printarea(int length, int width, int area){
         cout<<"The are of a rectangle with a length of "<<length<<" and a width of "<<width<<" is "<<area<<endl;
     }
+
+    // Exercise
+    // Function 1: check if number is even
+    bool isEven(int num){
+    if(num % 2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+    }
+    // Function 2: print the result
+    void printResult(int num, bool result){
+    cout<<num<<" is even? "<<result<<endl;
+    }
+
+   
