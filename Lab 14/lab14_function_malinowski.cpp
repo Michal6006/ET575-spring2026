@@ -99,7 +99,7 @@ int func1(){
     int n;
     cout<<"Enter a number greater than Zero: ";
     cin>>n;
-    if(n>=0){
+    if(n<=0){
         cout<<"Error! ";
         return func1();
     }
@@ -110,23 +110,13 @@ int func1(){
 
 // Function 2
 // #include<cmath>
-float func2(){
-    int x1,x2,y1,y2;
-    cout<<"Enter inital x position (x1): ";
-    cin>>x1;
-    cout<<"Enter final x position (x2): ";
-    cin>>x2; 
-    cout<<"Enter inital y position (y1): ";
-    cin>>y1; 
-    cout<<"Enter inital x position (y2): ";
-    cin>>y2;
-    float distance;
-    distance = sqrt(pow((x2-x1),2)+ pow((y2-y1),2));
-    return distance;
+float func2(int x1, int y1, int x2, int y2){
+    return sqrt(pow((x2-x1),2)+ pow((y2-y1),2));
+    
 }
 
 // Function 3
-void func3(int x1,int x2, int y1, int y2, float distance){
-    cout<<"The distance of points("<<x1<<","<<x2<<") and ("<<y1<<","<<y2<<") is "<<distance;
+void func3(int x1,int y1, int x2, int y2, float distance){
+    cout<<"The distance of points("<<x1<<","<<y1<<") and ("<<x2<<","<<y2<<") is "<<distance;
 }
 

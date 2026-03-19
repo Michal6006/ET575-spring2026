@@ -26,9 +26,17 @@ int main(){
     printresult(side1,side2,h);
 
     cout<<"\n----- Exercise -----"<<endl;
-    int x1,x2,y1,y2;
-    float distance = func2();
-    func3(x1,x2,y1,y2,distance);
+    int x1, y1, x2, y2;
+    cout<<"Enter x1 position"<<endl;
+    x1 = func1();
+    cout<<"\nEnter y1 position"<<endl;
+    y1 = func1();
+    cout<<"\nEnter x2 position"<<endl;
+    x2 = func1(); 
+    cout<<"\nEnter y2 position"<<endl;
+    y2 = func1();
+    float distance = func2(x1, y1, x2, y2);
+    func3(x1,y1,x2,y2,distance);
 
 
 
