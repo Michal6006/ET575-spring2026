@@ -59,8 +59,10 @@ bool snake_check(int a,int b){
 }
 
 // Function 3
-void results(bool a){
-    if(a == 1){
+void results(int a,int b,bool c){
+    cout<<"Dice 1 = "<<a<<endl;
+    cout<<"Dice 2 = "<<b<<endl;
+    if(c == 1){
         cout<<"Congrats! You got a snake eyes."<<endl;
     }
     else{

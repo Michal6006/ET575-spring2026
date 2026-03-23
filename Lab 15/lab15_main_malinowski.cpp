@@ -29,10 +29,8 @@ int main(){
     cout<<"\n----- Exercise  -----"<<endl;
     int dice_1 = dice();
     int dice_2 = dice();
-    cout<<"Dice 1: "<<dice_1<<endl;
-    cout<<"Dice 2: "<<dice_2<<endl;
     bool check = snake_check(dice_1,dice_2);
-    results(check);
+    results(dice_1, dice_2, check);
 
     return 0;
 }
