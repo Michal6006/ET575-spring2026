@@ -79,6 +79,15 @@ void introarray(){
     cout<<"The first name is = "<<names[0]<<endl;
 }
 
-
-
 // Exercise
+void exercise(){
+    int scores [5] = {60,90,75,88,100};
+
+    int lowest = scores[0];
+    for (int i = 1; i < 6; i++){
+        if (scores[i] < lowest){
+            lowest = scores[i];
+        }
+    }
+    cout<<"The lowest score is: "<<lowest<<endl;
+}

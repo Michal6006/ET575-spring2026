@@ -23,7 +23,7 @@ int main(){
     introarray();
 
     cout<<"\n----- Exercise -----"<<endl;
-
+    exercise();
     return 0;
 }
 
