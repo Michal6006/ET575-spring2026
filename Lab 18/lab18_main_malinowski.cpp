@@ -37,6 +37,9 @@ int main(){
     int ex_a[a_size];
     int l_size;
     collectnumber(ex_a, l_size, a_size);
+    float avg = Averagenumber(ex_a, a_size);
+    int closest = Closestmean(ex_a, a_size, avg);
+    Printresults(avg,closest);
     return 0;
 }
 
