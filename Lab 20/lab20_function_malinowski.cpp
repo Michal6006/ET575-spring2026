@@ -82,3 +82,51 @@ void appendmsg(string filename, string msg){
 
     fout.close();
 }
+
+// Example 5: Check is a file exists
+void checkfile(string filename){
+    ifstream fin;
+    fin.open(filename);
+
+    // If the filename dosen't exist in the root directory, exit the function
+    if(fin.fail()){
+        cout<<"File "<<filename<<" doesn't exist!"<<endl;
+        exit(1);
+    }
+
+    // If the filename exists, then read all the lines in the file
+    string eachline;
+    while(getline(fin, eachline)){
+
+        cout<<"Line 1 = "<<eachline<<endl;
+        
+    }
+
+    // Close the file
+    fin.close();
+}
+
+// Exercise
+void file_creation(string filename){
+    ofstream fout;
+    fout.open(filename);
+    fout<<"This is my output file - Michal Malinowski. \n";
+    fout.close();
+}
+
+void append_file(string filename, string msg){
+    ofstream fout;
+    fout.open(filename, ios::app);
+    fout<<msg<<endl;
+    fout.close();
+}
+
+void read_file(string filename){
+    ofstream fout;
+    ifstream file(filename);
+    string line;
+    while(getline(file, line)){
+        cout<<line<<endl;
+    }
+    fout.close();
+}

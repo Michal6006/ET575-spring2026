@@ -21,5 +21,12 @@ int main(){
     cout<<"\n----- Example 4: Append Data -----"<<endl;
     appendmsg("samplefile.txt","Michal Malinowski");
 
+    cout<<"\n----- Example 5: Check is a File Exists -----"<<endl;
+    checkfile("samplefile.txt");
+
+    cout<<"\n----- Exercise -----"<<endl;
+    file_creation("data_user.txt");
+    append_file("data_user.txt", "Exercise Lab 20");
+    read_file("data_user.txt");
     return 0;
 }
